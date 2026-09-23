@@ -97,18 +97,6 @@
             transform: translateY(-3px);
         }
 
-        .btn-outline {
-            background-color: transparent;
-            color: var(--neon-green);
-            border: 2px solid var(--neon-green);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--neon-green);
-            color: var(--bg-dark);
-            box-shadow: 0 0 20px rgba(0, 255, 102, 0.6);
-        }
-
         /* =========================================
            HEADER FIXO
            ========================================= */
@@ -167,11 +155,6 @@
             color: var(--neon-green);
         }
 
-        .header-cta {
-            display: flex;
-            align-items: center;
-        }
-
         .header-cta .btn {
             padding: 10px 20px;
             font-size: 0.85rem;
@@ -194,7 +177,6 @@
             display: flex;
             align-items: center;
             position: relative;
-            /* Substitua 'img/gym-bg.jpg' por uma imagem de fundo de academia moderna */
             background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop') center/cover no-repeat;
             padding-top: 80px;
         }
@@ -232,11 +214,11 @@
             justify-content: center;
         }
 
+        /* AQUI ESTÁ A FOTO 1 (HERO) */
         .hero-image img {
             width: 100%;
             max-width: 500px;
             border-radius: 20px;
-            /* Substitua 'img/valdivino-hero.jpg' pela foto de corpo inteiro/meio corpo do professor segurando o tablet */
             box-shadow: 0 0 40px rgba(0, 255, 102, 0.2);
             border: 2px solid rgba(0, 255, 102, 0.3);
             object-fit: cover;
@@ -257,10 +239,10 @@
             align-items: center;
         }
 
+        /* AQUI ESTÁ A FOTO 2 (PERFIL) */
         .sobre-image img {
             width: 100%;
             border-radius: 20px;
-            /* Substitua 'img/valdivino-perfil.jpg' pela foto de perfil profissional sorrindo */
             box-shadow: 0 0 30px rgba(0, 255, 102, 0.15);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
@@ -347,10 +329,12 @@
             box-shadow: 0 10px 30px rgba(0, 255, 102, 0.15);
         }
 
+        /* AQUI ESTÃO AS FOTOS 3 E 4 (CERTIFICADO E DIPLOMA) */
         .card img {
             width: 100%;
             height: 250px;
             object-fit: cover;
+            object-position: top;
             border-bottom: 2px solid var(--neon-green);
         }
 
@@ -386,7 +370,6 @@
             padding: 30px;
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.05);
-            position: relative;
         }
 
         .depoimento-card i.fa-quote-left {
@@ -605,7 +588,6 @@
             </ul>
 
             <div class="header-cta">
-                <!-- Link do WhatsApp com mensagem pré-definida -->
                 <a href="https://wa.me/5579980516149?text=Ol%C3%A1%20Professor%20Valdivino!%20Gostaria%20de%20saber%20mais%20sobre%20a%20consultoria." target="_blank" class="btn btn-primary">
                     <i class="fab fa-whatsapp"></i> Falar no WhatsApp
                 </a>
@@ -628,8 +610,8 @@
                 </a>
             </div>
             <div class="hero-image">
-                <!-- SUBSTITUA A IMAGEM ABAIXO PELA FOTO DO PROFESSOR SEGURANDO O TABLET -->
-                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop" alt="Professor Valdivino dos Santos - Personal Trainer">
+                <!-- FOTO 1: Professor segurando o tablet -->
+                <img src="img/valdivino-hero.jpg" alt="Professor Valdivino dos Santos - Personal Trainer">
             </div>
         </div>
     </section>
@@ -638,8 +620,8 @@
     <section id="sobre">
         <div class="container sobre-container">
             <div class="sobre-image">
-                <!-- SUBSTITUA A IMAGEM ABAIXO PELA FOTO DE PERFIL DO PROFESSOR SORRINDO -->
-                <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=1470&auto=format&fit=crop" alt="Valdivino dos Santos - Perfil">
+                <!-- FOTO 2: Close no rosto com crachá -->
+                <img src="img/valdivino-perfil.jpg" alt="Valdivino dos Santos - Perfil">
             </div>
             <div class="sobre-text">
                 <h2>EXPERIÊNCIA E <span>COMPROMISSO</span> COM OS SEUS RESULTADOS</h2>
@@ -664,29 +646,26 @@
             </div>
 
             <div class="cards-grid">
-                <!-- CARD 1 -->
+                <!-- CARD 1 - FOTO 3: Certificado Azul -->
                 <div class="card">
-                    <!-- SUBSTITUA A IMAGEM: Foto do professor ajustando carga / acompanhando supino -->
-                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1470&auto=format&fit=crop" alt="Hipertrofia e Ganho de Massa Muscular">
+                    <img src="img/valdivino-certificado.jpg" alt="Certificação Personal Trainer">
                     <div class="card-content">
                         <h3>Hipertrofia e Ganho de Massa</h3>
                         <p>Treinos focados no estímulo máximo da musculatura, com controle de cargas e periodização avançada para resultados rápidos.</p>
                     </div>
                 </div>
 
-                <!-- CARD 2 -->
+                <!-- CARD 2 - FOTO 4: Diploma Unicesumar -->
                 <div class="card">
-                    <!-- SUBSTITUA A IMAGEM: Foto liderando treinamento dinâmico / circuito -->
-                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1470&auto=format&fit=crop" alt="Emagrecimento e Definição">
+                    <img src="img/valdivino-diploma.jpg" alt="Diploma Unicesumar - Educação Física">
                     <div class="card-content">
                         <h3>Emagrecimento e Definição</h3>
                         <p>Metodologia focada em alto gasto calórico e preservação de massa magra. Transforme sua composição corporal com eficiência.</p>
                     </div>
                 </div>
 
-                <!-- CARD 3 -->
+                <!-- CARD 3 (Mantido com imagem de estoque, se quiser substituir depois) -->
                 <div class="card">
-                    <!-- SUBSTITUA A IMAGEM: Foto utilizando corda naval ou acessórios -->
                     <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1470&auto=format&fit=crop" alt="Treinamento Funcional">
                     <div class="card-content">
                         <h3>Funcional e Condicionamento</h3>
@@ -694,9 +673,8 @@
                     </div>
                 </div>
 
-                <!-- CARD 4 -->
+                <!-- CARD 4 (Mantido com imagem de estoque, se quiser substituir depois) -->
                 <div class="card">
-                    <!-- SUBSTITUA A IMAGEM: Foto analisando planejamento em tablet na academia -->
                     <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1470&auto=format&fit=crop" alt="Consultoria Online">
                     <div class="card-content">
                         <h3>Consultoria Presencial e Online</h3>
@@ -716,7 +694,6 @@
             </div>
 
             <div class="depoimentos-grid">
-                <!-- DEPOIMENTO 1 -->
                 <div class="depoimento-card">
                     <i class="fas fa-quote-left"></i>
                     <p>"O Professor Valdivino mudou completamente a minha relação com a academia. Perdi 12kg em 4 meses com um treino que eu realmente gosto de fazer. Profissional excepcional!"</p>
@@ -729,7 +706,6 @@
                     </div>
                 </div>
 
-                <!-- DEPOIMENTO 2 -->
                 <div class="depoimento-card">
                     <i class="fas fa-quote-left"></i>
                     <p>"Sempre tive dificuldade de ganhar massa. Com a metodologia e o acompanhamento do Prof. Valdivino, consegui ganhar 8kg de massa magra. Ele é focado no resultado do aluno."</p>
@@ -742,7 +718,6 @@
                     </div>
                 </div>
 
-                <!-- DEPOIMENTO 3 -->
                 <div class="depoimento-card">
                     <i class="fas fa-quote-left"></i>
                     <p>"Mesmo morando em outra cidade, a consultoria online dele é sensacional. Ele está sempre disponível para tirar dúvidas e ajustar o treino. Recomendo de olhos fechados!"</p>
@@ -755,7 +730,6 @@
                     </div>
                 </div>
 
-                <!-- DEPOIMENTO 4 -->
                 <div class="depoimento-card">
                     <i class="fas fa-quote-left"></i>
                     <p>"Minha energia voltou! O treino funcional que ele montou para mim melhorou minhas dores nas costas e meu condicionamento físico. Profissional que entende do assunto."</p>
@@ -768,7 +742,6 @@
                     </div>
                 </div>
 
-                <!-- DEPOIMENTO 5 -->
                 <div class="depoimento-card">
                     <i class="fas fa-quote-left"></i>
                     <p>"O Professor Valdivino é atencioso, pontual e muito didático. Ele explica cada exercício e a importância de cada um. Me sinto muito segura treinando com ele."</p>
@@ -781,7 +754,6 @@
                     </div>
                 </div>
 
-                <!-- DEPOIMENTO 6 -->
                 <div class="depoimento-card">
                     <i class="fas fa-quote-left"></i>
                     <p>"Resultado real! Em 6 meses de treino, minha definição muscular mudou completamente. O acompanhamento faz toda a diferença. Vale cada centavo do investimento."</p>
@@ -834,9 +806,8 @@
         </div>
     </footer>
 
-    <!-- JavaScript para Menu Mobile e Header Fixo -->
+    <!-- JavaScript -->
     <script>
-        // Efeito de rolagem do Header
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -846,7 +817,6 @@
             }
         });
 
-        // Menu Mobile
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
 
@@ -854,14 +824,12 @@
             navLinks.classList.toggle('active');
         });
 
-        // Fechar menu ao clicar em um link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
             });
         });
 
-        // Animação suave de revelação ao rolar a página (Scroll Reveal)
         const observerOptions = {
             root: null,
             rootMargin: '0px',
@@ -878,7 +846,6 @@
             });
         }, observerOptions);
 
-        // Aplicar animação aos elementos
         document.querySelectorAll('.card, .sobre-text, .depoimento-card, .hero-text, .hero-image').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
@@ -888,4 +855,3 @@
     </script>
 </body>
 </html>
-
